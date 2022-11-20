@@ -24,11 +24,7 @@ def showEstoque():
     if len(estoque)==0:
         print('estoque vazio')
     else:
-        c= 1
-        for element in estoque:
-            print(f'{c}- {element}')
-            c+=1
-        print(line())
+        main(estoque)
 
 def addItem():
     item=input('digite o item que deseja adicionar:')
